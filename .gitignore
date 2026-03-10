@@ -1,2 +1,9 @@
+# Python
+uv.lock
+
+# Environment
+.venv
 .env
+
+# IDE
 .idea
