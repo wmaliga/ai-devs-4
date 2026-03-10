@@ -1,0 +1,10 @@
+[project]
+name = "ai-devs-4"
+version = "0.0.1"
+requires-python = ">=3.13"
+description = "AI Devs 4: Builders"
+
+dependencies = [
+    "requests",
+    "python-dotenv",
+]

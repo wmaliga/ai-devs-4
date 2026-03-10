@@ -1,0 +1,18 @@
+### S01E01 - AI Devs - People
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "people",
+  "answer": [
+    {
+      "name": "Name",
+      "surname": "Surname",
+      "gender": "M",
+      "born": 1987,
+      "city": "Grudziądz",
+      "tags": [ "transport" ]
+    }
+  ]
+}
