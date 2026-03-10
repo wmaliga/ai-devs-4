@@ -1,0 +1,26 @@
+### S01E02 - AI Devs - Find Him
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "findhim",
+  "answer": {
+    "name": "Name",
+    "surname": "Surname",
+    "accessLevel": 1,
+    "powerPlant": "PWR3847PL"
+  }
+}
+
+
+### S01E02 - AI Devs - Access Level
+POST {{ai_devs_hub_url}}/api/accesslevel
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "name": "Martin",
+  "surname": "Handford",
+  "birthYear": "1987"
+}
