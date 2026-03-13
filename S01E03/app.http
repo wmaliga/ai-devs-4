@@ -1,0 +1,30 @@
+### S01E03 - AI Devs - Proxy
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "proxy",
+  "answer": {
+    "url": "https://frog02-20323.wykr.es",
+    "sessionID": "1"
+  }
+}
+
+### S01E03 - AI Devs - App Mikrus
+POST https://frog02-20323.wykr.es
+Content-Type: application/json
+
+{
+  "sessionID": "1",
+  "msg": "Jaka tam u was pogoda?"
+}
+
+### S01E03 - AI Devs - App Local
+POST http://127.0.0.1:8000
+Content-Type: application/json
+
+{
+  "sessionID": "1",
+  "msg": "Jaka tam u was pogoda?"
+}
