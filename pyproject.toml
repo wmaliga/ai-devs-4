@@ -7,4 +7,7 @@ description = "AI Devs 4: Builders"
 dependencies = [
     "requests",
     "python-dotenv",
+    "fastapi",
+    "uvicorn",
+    "httpx",
 ]
