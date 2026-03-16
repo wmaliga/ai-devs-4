@@ -1,0 +1,11 @@
+### S02E01 - AI Devs - Categorize
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "categorize",
+  "answer": {
+    "prompt": "PASTE PROMPT HERE"
+  }
+}
