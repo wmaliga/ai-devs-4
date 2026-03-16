@@ -1,0 +1,11 @@
+### S01E05 - AI Devs - Railway
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "railway",
+  "answer": {
+    "action": "help"
+  }
+}
