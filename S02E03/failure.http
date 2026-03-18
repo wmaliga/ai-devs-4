@@ -1,0 +1,11 @@
+### S02E03 - AI Devs - Failure
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "failure",
+  "answer": {
+    "logs": "test"
+  }
+}
