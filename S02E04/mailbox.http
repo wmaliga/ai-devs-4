@@ -1,0 +1,10 @@
+### S02E04 - AI Devs - Mailbox
+POST {{ai_devs_hub_url}}/api/zmail
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "action": "getInbox",
+  "page": 1,
+  "perPage": 20
+}
