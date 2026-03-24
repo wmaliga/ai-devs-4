@@ -1,0 +1,21 @@
+### S03E02 - AI Devs - Firmaware
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "firmware",
+  "answer": {
+    "confirmation": "ECCS-KOD"
+  }
+}
+
+
+### S03E02 - AI Devs - Shell
+POST {{ai_devs_hub_url}}/api/shell
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "cmd": "help"
+}
