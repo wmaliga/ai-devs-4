@@ -1,0 +1,11 @@
+### S03E03 - AI Devs - Reactor
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "reactor",
+  "answer": {
+    "command": "start"
+  }
+}
