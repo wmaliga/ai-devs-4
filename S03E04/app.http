@@ -1,0 +1,45 @@
+### S03E04 - AI Devs - App Mikrus
+POST https://frog02-20323.wykr.es/search
+Content-Type: application/json
+
+{
+  "params": "akumulator pod 48V dowolna pojemność"
+}
+
+
+### S03E04 - AI Devs - App Local
+POST http://127.0.0.1:8000/search
+Content-Type: application/json
+
+{
+  "params": "akumulator pod 48V dowolna pojemność"
+}
+
+### S03E04 - AI Devs - Negotiations
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "negotiations",
+  "answer": {
+    "tools": [
+      {
+        "URL": "https://frog02-20323.wykr.es/search",
+        "description": "Narzędzie przyjmuje nazwę przedmiotu i zwraca listę miast w których można go znaleźć."
+      }
+    ]
+  }
+}
+
+### S03E04 - AI Devs - Negotiations
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "negotiations",
+  "answer": {
+    "action": "check"
+  }
+}
