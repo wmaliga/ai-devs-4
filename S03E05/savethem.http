@@ -1,0 +1,37 @@
+### S03E05 - AI Devs - Save Them
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "savethem",
+  "answer": ["rocket","up","right","right","up","right","up","right","right","dismount","right","right","right"]
+}
+
+### S03E05 - AI Devs - Beavers
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "savethem",
+  "answer":  ["rocket","up","up","up","up","up","up","right","right","right","dismount","right","right","right"]
+}
+
+### S03E05 - AI Devs - Save Them
+POST {{ai_devs_hub_url}}/api/toolsearch
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "query": "I need notes about movement rules and terrain"
+}
+
+### S03E05 - AI Devs - Save Them
+POST {{ai_devs_hub_url}}/api/maps
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "query": "Skolwin"
+}

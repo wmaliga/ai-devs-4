@@ -6,7 +6,7 @@ import requests
 logger = logging.getLogger(__name__)
 
 
-def call_model(messages, model="google/gemini-3.1-flash-lite-preview", tools=[], response_schema=None):
+def call_model(messages, model="google/gemini-3.1-flash-lite-preview", tools=[], response_schema=None, max_tokens=2048, reasoning = None):
     logger.debug("Calling model...")
 
     api_key = os.getenv("OPENROUTER_API_KEY")
@@ -20,7 +20,11 @@ def call_model(messages, model="google/gemini-3.1-flash-lite-preview", tools=[],
         "model": model,
         "messages": messages,
         "tools": tools,
+        "max_tokens": max_tokens,
     }
+
+    if reasoning:
+        body["reasoning"] = {"effort": reasoning}
 
     if response_schema:
         body["response_format"] = {
