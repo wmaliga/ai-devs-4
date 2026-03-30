@@ -1,0 +1,11 @@
+### S03E05 - AI Devs - Oko Editor
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "okoeditor",
+  "answer": {
+    "action": "help"
+  }
+}
