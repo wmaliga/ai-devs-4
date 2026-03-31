@@ -1,0 +1,75 @@
+### S04E02 - AI Devs - Start
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "windpower",
+  "answer": {
+    "action": "start"
+  }
+}
+
+### S04E02 - AI Devs - Documentation - Weather
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "windpower",
+  "answer": {
+    "action": "get",
+    "param": "weather"
+  }
+}
+
+### S04E02 - AI Devs - Documentation - Turbine
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "windpower",
+  "answer": {
+    "action": "get",
+    "param": "turbinecheck"
+  }
+}
+
+### S04E02 - AI Devs - Documentation - Powerplant
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "windpower",
+  "answer": {
+    "action": "get",
+    "param": "powerplantcheck"
+  }
+}
+
+### S04E02 - AI Devs - Documentation
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "windpower",
+  "answer": {
+    "action": "get",
+    "param": "documentation"
+  }
+}
+
+### S04E02 - AI Devs - Get Results
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "windpower",
+  "answer": {
+    "action": "getResult"
+  }
+}

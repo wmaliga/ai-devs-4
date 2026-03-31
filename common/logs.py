@@ -1,4 +1,5 @@
 import logging
+import time
 
 
 def get_logger(name=__name__, level=logging.INFO):
@@ -16,3 +17,15 @@ def get_logger(name=__name__, level=logging.INFO):
     logger.addHandler(handler)
 
     return logger
+
+
+start = None
+
+
+def elpased()  -> int:
+    global start
+
+    if not start:
+        start = time.perf_counter()
+
+    return int(time.perf_counter() - start) if start else 0
