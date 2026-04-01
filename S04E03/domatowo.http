@@ -1,0 +1,11 @@
+### S04E03 - AI Devs - Domatowo
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "domatowo",
+  "answer": {
+    "action": "help"
+  }
+}
