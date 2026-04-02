@@ -1,0 +1,26 @@
+### S04E04 - AI Devs - Filesystem - Create directory
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "filesystem",
+  "answer": {
+    "action": "createDirectory",
+    "path": "/miasta"
+  }
+}
+
+### S04E04 - AI Devs - Filesystem - Create file
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "filesystem",
+  "answer": {
+    "action": "createFile",
+    "path": "/miasta/opatowo",
+    "content": "Hello World!"
+  }
+}
