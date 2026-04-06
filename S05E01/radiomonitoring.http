@@ -1,0 +1,39 @@
+### S05E01 - AI Devs - Radiomonitoring - Start
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "radiomonitoring",
+  "answer": {
+    "action": "start"
+  }
+}
+
+### S05E01 - AI Devs - Radiomonitoring - Listen
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "radiomonitoring",
+  "answer": {
+    "action": "listen"
+  }
+}
+
+### S05E01 - AI Devs - Radiomonitoring - Transmit
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "radiomonitoring",
+  "answer": {
+    "action": "transmit",
+    "cityName": "Skarszewy",
+    "cityArea": 10.73,
+    "warehousesCount": 11,
+    "phoneNumber": "471"
+   }
+}
