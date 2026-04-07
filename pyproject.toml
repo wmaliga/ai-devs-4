@@ -10,4 +10,6 @@ dependencies = [
     "fastapi",
     "uvicorn",
     "httpx",
+    "faster-whisper",
+    "piper-tts",
 ]

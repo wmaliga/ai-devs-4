@@ -1,0 +1,23 @@
+### S05E02 - AI Devs - Phone Call - Start
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "phonecall",
+  "answer": {
+    "action": "start"
+  }
+}
+
+### S05E02 - AI Devs - Phone Call - Audio
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "phonecall",
+  "answer": {
+    "audio": "base64"
+  }
+}
