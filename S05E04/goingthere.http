@@ -1,0 +1,36 @@
+### S05E04 - AI Devs - Going There - Command
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "goingthere",
+  "answer": {
+    "command": "start"
+  }
+}
+
+
+### S05E04 - AI Devs - Going There - Get Message
+POST {{ai_devs_hub_url}}/api/getmessage
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}"
+}
+
+
+### S05E04 - AI Devs - Going There - Frequency Scanner
+GET {{ai_devs_hub_url}}/api/frequencyScanner?key={{ai_devs_api_key}}
+Content-Type: application/json
+
+
+### S05E04 - AI Devs - Going There - Disarm
+POST {{ai_devs_hub_url}}/api/frequencyScanner
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "frequency": 620,
+  "disarmHash": "37367375276c0296767667f339678129753c82e6"
+}
