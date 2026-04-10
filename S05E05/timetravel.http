@@ -1,0 +1,25 @@
+### S05E04 - AI Devs - Time Travel - Help
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "timetravel",
+  "answer": {
+    "action": "help"
+  }
+}
+
+### S05E04 - AI Devs - Time Travel - Configure
+POST {{ai_devs_hub_url}}/verify
+Content-Type: application/json
+
+{
+  "apikey": "{{ai_devs_api_key}}",
+  "task": "timetravel",
+  "answer": {
+    "action": "configure",
+    "param": "syncRatio",
+    "value": 0.5
+  }
+}
